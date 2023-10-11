@@ -1,35 +1,103 @@
-.grid-container{
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+
+body{
+    background-color: rgb(11, 102, 50);
+}
+.grid-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(6, 50px);
-    gap: 10px;
-}
-.nav-logo{
-    height: 10px;
-    width: 10px;
-    grid-area: 1 / 1 / 2 / 2;
-}
-.header{
-    grid-area: 1 / 2 / 2 / 4;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 15px;
 }
 
+#title{
+    background-color: azure;
+    border-radius: 25px;
+    border-style: none;
+    color: rgb(0, 0, 0);
+}
 
+.header {
+    grid-column: 1 / -1;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
 
-.about-me img{
-    height: 12em;
-    width: 15em;
-    grid-area: 2 / 1 / 3 / 2;
+.content {
+    padding: 16px;
 }
-.commission img{
-    height: 20em;
-    width: 30em;
-    grid-area: 3 / 1 / 4 / 2;
+
+.sticky {
+    position: fixed;
+    top: 0;
 }
-.artist img{
-    height: 20em;
-    width: 30em;
+
+.sticky + .content {
+    padding-top: 102px;
 }
-.blog img{
-    height: 20em;
-    width: 30em;
+
+.navbar{
+    border-style: none;
+    background-color: azure;
+    padding: 5px;
+    width: 100%;
+}
+
+.nav-logo img {
+    max-width: 150px;
+    padding: 14px;
+    border-radius: 25px;
+    border-style: groove;
+}
+
+.about-me {
+    grid-column: 1 / 3;
+    grid-row: 2 / 5;
+    background-color: azure;
+    padding: 20px;
+}
+
+.Projects {
+    grid-column: 3 / -1;
+    grid-row: 2 / 5;
+    background-color: azure;
+    padding: 20px;
+}
+
+.footer {
+    grid-column: 1 / -1;
+    grid-row: 5 / 6;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    align-content: center;
+}
+
+.about-me img {
+    height: 100%;
+    width: 100%;
+}
+
+.about-me{
+    display: flex;
+    text-align: center;
+}
+
+.commission img {
+    height: 100%;
+    width: 100%;
+}
+
+.artist img {
+    height: 100%;
+    width: 100%;
+}
+
+.blog img {
+    height: 100%;
+    width: 100%;
 }
