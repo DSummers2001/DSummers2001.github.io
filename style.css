@@ -3,101 +3,113 @@ html {
 }
 
 body{
-    background-color: rgb(11, 102, 50);
+    background-color: #042A2B;
 }
-.grid-container {
+
+.grid-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    gap: 15px;
+    grid-template-rows: 0.1fr 0.8fr 0.8fr 0.1fr;
+    gap: 10px;
+    grid-template-areas:
+    "header header header header"
+    "about about about about"
+    "com com com com"
+    "footer footer footer footer";
 }
 
 #title{
-    background-color: azure;
+    background-color: #54F2F2;
     border-radius: 25px;
     border-style: none;
-    color: rgb(0, 0, 0);
+    color: #042A2B;
 }
 
-.header {
-    grid-column: 1 / -1;
-    background-color: #333;
-    color: white;
+.header{
+    grid-area: header;
+    background-color: #5EB1BF;
     text-align: center;
-    padding: 15px;
 }
 
-.content {
+.content{
     padding: 16px;
 }
 
-.sticky {
+.sticky{
     position: fixed;
     top: 0;
 }
 
-.sticky + .content {
+.sticky + .content{
     padding-top: 102px;
 }
 
 .navbar{
     border-style: none;
-    background-color: azure;
+    background-color: #54F2F2;
     padding: 5px;
-    width: 100%;
 }
 
-.nav-logo img {
-    max-width: 150px;
-    padding: 14px;
+.nav-logo img{
+    width: 25px;
     border-radius: 25px;
-    border-style: groove;
-}
-
-.about-me {
-    grid-column: 1 / 3;
-    grid-row: 2 / 5;
-    background-color: azure;
-    padding: 20px;
-}
-
-.Projects {
-    grid-column: 3 / -1;
-    grid-row: 2 / 5;
-    background-color: azure;
-    padding: 20px;
-}
-
-.footer {
-    grid-column: 1 / -1;
-    grid-row: 5 / 6;
-    background-color: #333;
-    color: white;
-    text-align: center;
-    align-content: center;
-}
-
-.about-me img {
-    height: 100%;
-    width: 100%;
 }
 
 .about-me{
-    display: flex;
+    grid-area: about;
+    background-color: #5EB1BF;
+    padding: 20px;
     text-align: center;
 }
 
+.commission{
+    display: flex;
+    background-color: #5EB1BF;
+    flex-direction: row;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.artist{
+    display: flex;
+    background-color: #5EB1BF;
+    flex-direction: row-reverse;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.blog{
+    display: flex;
+    background-color: #5EB1BF;
+    flex-direction: row;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+footer{
+    grid-area: footer;
+    background-color: #5EB1BF;
+    color: #042A2B;
+    text-align: center;
+}
+
+.about-me img {
+    width: 50vw;
+}
+
+.about-me h1{
+    background-color: #54F2F2;
+    color: #042A2B;
+}
+
 .commission img {
-    height: 100%;
-    width: 100%;
+    width: 50vw;
 }
 
 .artist img {
-    height: 100%;
-    width: 100%;
+    width: 50vw;
 }
 
 .blog img {
-    height: 100%;
-    width: 100%;
+    width: 50vw;
 }
