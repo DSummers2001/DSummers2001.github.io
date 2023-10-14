@@ -9,12 +9,14 @@ body{
 .grid-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 0.1fr 0.8fr 0.8fr 0.1fr;
+    grid-template-rows: 0.1fr 0.8fr 0.7fr 0.7fr 0.7fr 0.1fr;
     gap: 10px;
     grid-template-areas:
     "header header header header"
     "about about about about"
     "com com com com"
+    "art art art art"
+    "blog blog blog blog"
     "footer footer footer footer";
 }
 
@@ -51,7 +53,7 @@ body{
 }
 
 .nav-logo img{
-    width: 25px;
+    width: 28px;
     border-radius: 25px;
 }
 
@@ -60,30 +62,37 @@ body{
     background-color: #5EB1BF;
     padding: 20px;
     text-align: center;
+    color: #042A2B;
 }
 
 .commission{
-    display: flex;
+    grid-area: com;
     background-color: #5EB1BF;
-    flex-direction: row;
-    padding: 10px;
-    flex-wrap: wrap;
+    text-align: center;
+    color: #042A2B;
+    padding: 4px;
+}
+
+.commission h2{
+    background-color: #54F2F2;
+    border-radius: 25px;
+    border-style: double;
 }
 
 .artist{
-    display: flex;
+    grid-area: art;
     background-color: #5EB1BF;
-    flex-direction: row-reverse;
-    padding: 10px;
-    flex-wrap: wrap;
+    text-align: center;
+    color: #042A2B;
+    padding: 4px;
 }
 
 .blog{
-    display: flex;
+    grid-area: blog;
     background-color: #5EB1BF;
-    flex-direction: row;
-    padding: 10px;
-    flex-wrap: wrap;
+    text-align: center;
+    color: #042A2B;
+    padding: 4px;
 }
 
 footer{
@@ -98,6 +107,8 @@ footer{
 }
 
 .about-me h1{
+    border-radius: 8px;
+    border-style: double;
     background-color: #54F2F2;
     color: #042A2B;
 }
