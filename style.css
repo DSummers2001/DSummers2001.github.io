@@ -4,6 +4,8 @@ html {
 
 body{
     background-color: #FCF7FF;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .grid-container{
@@ -93,7 +95,9 @@ footer{
 }
 
 .about-me img {
-    width: 50vw;
+    width: 25vh;
+    border-radius: 60%;
+    height: 20vh;
 }
 
 .about-me h1{
