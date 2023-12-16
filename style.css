@@ -3,7 +3,7 @@ html {
 }
 
 body{
-    background-color: #042A2B;
+    background-color: #FCF7FF;
 }
 
 .grid-container{
@@ -21,84 +21,74 @@ body{
 }
 
 #title{
-    background-color: #54F2F2;
-    border-radius: 25px;
-    border-style: none;
-    color: #042A2B;
+    color: #FCF7FF;
+    margin-left: 25px;
 }
 
 .header{
     grid-area: header;
-    background-color: #5EB1BF;
-    text-align: center;
+    background-color: #878C8F;
 }
 
-.content{
-    padding: 16px;
-}
-
-.sticky{
-    position: fixed;
-    top: 0;
-}
-
-.sticky + .content{
-    padding-top: 102px;
+.nav-container{
+    display: flex;
 }
 
 .navbar{
-    border-style: none;
-    background-color: #54F2F2;
-    padding: 5px;
+    text-align: center;
+    padding: 6px;
+    background-color: #A4969B;
 }
 
 .nav-logo img{
-    width: 28px;
-    border-radius: 25px;
+    width: 40px;
+    margin-top: 20px;
+    border-radius: 50%;
+    margin-left: 35%;
 }
 
 .about-me{
     grid-area: about;
-    background-color: #5EB1BF;
+    background-color: #878C8F;
     padding: 20px;
     text-align: center;
-    color: #042A2B;
+    color: #FCF7FF;
 }
 
 .commission{
     grid-area: com;
-    background-color: #5EB1BF;
+    background-color: #878C8F;
     text-align: center;
-    color: #042A2B;
+    color: #FCF7FF;
     padding: 4px;
 }
 
 .commission h2{
-    background-color: #54F2F2;
-    border-radius: 25px;
+    background-color: #A4969B;
+    border-radius: 8px;
     border-style: double;
 }
 
 .artist{
     grid-area: art;
-    background-color: #5EB1BF;
+    background-color: #878C8F;
     text-align: center;
-    color: #042A2B;
+    color: #FCF7FF;
     padding: 4px;
 }
 
 .blog{
     grid-area: blog;
-    background-color: #5EB1BF;
+    background-color: #878C8F;
     text-align: center;
-    color: #042A2B;
+    color: #FCF7FF;
     padding: 4px;
 }
 
 footer{
     grid-area: footer;
-    background-color: #5EB1BF;
-    color: #042A2B;
+    background-color: #878C8F;
+    color: #FCF7FF;
     text-align: center;
 }
 
@@ -109,8 +99,8 @@ footer{
 .about-me h1{
     border-radius: 8px;
     border-style: double;
-    background-color: #54F2F2;
-    color: #042A2B;
+    background-color: #A4969B;
+    color: #FCF7FF;
 }
 
 .commission img {
