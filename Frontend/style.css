@@ -4,21 +4,18 @@ html {
 
 body{
     background-color: #FCF7FF;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
-.grid-container{
+.grid-container-about{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 0.1fr 0.8fr 0.7fr 0.7fr 0.7fr 0.1fr;
+    grid-template-rows: 0.1fr 0.8fr 0.1fr;
     gap: 10px;
     grid-template-areas:
     "header header header header"
     "about about about about"
-    "com com com com"
-    "art art art art"
-    "blog blog blog blog"
     "footer footer footer footer";
 }
 
@@ -27,7 +24,7 @@ body{
     margin-left: 25px;
 }
 
-.header{
+.header-about{
     grid-area: header;
     background-color: #878C8F;
 }
@@ -53,38 +50,7 @@ body{
     grid-area: about;
     background-color: #878C8F;
     padding: 20px;
-    text-align: center;
     color: #FCF7FF;
-}
-
-.commission{
-    grid-area: com;
-    background-color: #878C8F;
-    text-align: center;
-    color: #FCF7FF;
-    padding: 4px;
-}
-
-.commission h2{
-    background-color: #A4969B;
-    border-radius: 8px;
-    border-style: double;
-}
-
-.artist{
-    grid-area: art;
-    background-color: #878C8F;
-    text-align: center;
-    color: #FCF7FF;
-    padding: 4px;
-}
-
-.blog{
-    grid-area: blog;
-    background-color: #878C8F;
-    text-align: center;
-    color: #FCF7FF;
-    padding: 4px;
 }
 
 footer{
@@ -95,26 +61,23 @@ footer{
 }
 
 .about-me img {
-    width: 25vh;
+    float: left;
+    padding-right: 5px;
+    width: 20vh;
     border-radius: 60%;
     height: 20vh;
 }
 
+.contact-info {
+    text-align: center;
+}
+
 .about-me h1{
+    display: inline-block;
+    padding-left: 20%;
+    padding-right: 20%;
     border-radius: 8px;
     border-style: double;
     background-color: #A4969B;
     color: #FCF7FF;
-}
-
-.commission img {
-    width: 50vw;
-}
-
-.artist img {
-    width: 50vw;
-}
-
-.blog img {
-    width: 50vw;
 }
