@@ -60,7 +60,7 @@ footer{
     text-align: center;
 }
 
-.about-me img {
+.about-me img{
     float: left;
     padding-right: 5px;
     width: 20vh;
@@ -68,7 +68,7 @@ footer{
     height: 20vh;
 }
 
-.contact-info {
+.contact-info{
     text-align: center;
 }
 
